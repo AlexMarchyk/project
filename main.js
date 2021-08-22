@@ -35,7 +35,7 @@ function rememberMyFilms(){
     }
 }
 
-// rememberMyFilms();
+rememberMyFilms();
 
 
 
@@ -51,7 +51,7 @@ function detectPersonalLevel(){
         }
 
 }
-// detectPersonalLevel();
+detectPersonalLevel();
 
 function showMyDB  (hidden){
     if(!hidden){
@@ -78,4 +78,4 @@ function writeYourGenres(){
 
  writeYourGenres();
 
-// console.log(personalMovieDB);
+console.log(personalMovieDB);
