@@ -76,6 +76,6 @@ function writeYourGenres(){
 
 }
 
- writeYourGenres();
+ writeYourGenres3123();
 
 console.log(personalMovieDB);
