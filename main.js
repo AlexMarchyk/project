@@ -1,7 +1,4 @@
 
-
-
-
 const personalMovieDB = {
     count: 0,
     movies: {},
