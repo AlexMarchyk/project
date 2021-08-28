@@ -1,4 +1,4 @@
-'use strict';
+
 
 const movieDB = {
     movies: [
@@ -6,30 +6,35 @@ const movieDB = {
         "Лига справедливости",
         "Ла-ла лэнд",
         "Одержимость",
-        "Скотт Пилигрим против..."
+        "Скотт Пилигрим противgsd..."
     ]
 };
 
+
 const adv = document.querySelectorAll('.promo__adv');
-const poster = document.querySelector('.promo__bg');
-const genre =  poster.querySelector('.promo__genre');
+const poster =document.querySelector('.promo__bg');
+const genre = poster.querySelector('.promo__genre');
 const movieList = document.querySelector('.promo__interactive-list');
 
 
 adv.forEach(function(item){
- item.remove();
+    item.remove();
 });
-genre.textContent = "драма";
 
-poster.style.backgroundImage='url("/img/bg.jpg")';
+poster.style.backgroundImage ="url('/img/bg.jpg')";
 
-movieList.innerHTML = '';
+genre.textContent = 'Драма';
+movieList.innerHTML = " ";
 
 movieDB.movies.sort();
 
-movieDB.movies.forEach(function(item,i){
-    console.log(item);
-    movieList.innerHTML += `<li class="promo__interactive-item">${i + 1} ${item}
-        <div class="delete"></div>
-    </li>`;
+movieDB.movies.forEach((film,i)=>{
+  
+    movieList.innerHTML += ` <li class="promo__interactive-item">${i+1} ${film}
+    <div class="delete"></div>
+</li>`
+    ;
 });
+
+
+
